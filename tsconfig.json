@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "target": "es2017",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "types": [
+      "node",
+      "jest",
+      "reflect-metadata"
+    ],
+    "typeRoots": ["node_modules/@types"],
+    "outDir": "build/dist",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "importHelpers": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "test/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
