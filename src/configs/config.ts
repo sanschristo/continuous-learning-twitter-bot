@@ -14,8 +14,8 @@ export default {
         access_token_secret: process.env.ACCESS_TOKEN_SECRET
     } as AccessTokenOptions,
     retweetConfig: {
-        hashtags: [ 'typescript', 'javascript', 'python' ],
-        sortOrder: 'popular',
-        numTweets: 5
+        hashtags: [ 'typescript', 'javascript', 'python', 'nodejs' ],
+        sortOrder: 'recent',
+        numTweets: 10
     } as RetweetConfig
 } as ConfigInterface;

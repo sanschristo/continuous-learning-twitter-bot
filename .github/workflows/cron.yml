@@ -1,8 +1,8 @@
-name: Hourly Cron
+name: Bi-hourly Cron
 
 on:
   schedule:
-    - cron: '00 */1 * * *'
+    - cron: '00 */2 * * *'
 
 jobs:
   build:
