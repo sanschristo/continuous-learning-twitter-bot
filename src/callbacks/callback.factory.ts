@@ -21,12 +21,12 @@ export function callbackFactory(type: CallbackType, stream?: Subject<any>): Call
                 if (error) {
                     console.log('Error:', error);
                 } else if (tweets) {
-                    tweets?.statuses.forEach((tweet: any) => { stream.next(tweet.id_str) });
+                    tweets.statuses?.forEach((tweet: any) => { stream.next(tweet.id_str) });
                 }
             }
             break;
         case CallbackType.GenericErrorHandler:
-            cb = (error) => { if (error) console.log(`Error for ID:`, error) };
+            cb = (error) => { if (error) console.log('Error:', error) };
             break;
         default:
             cb = defaultCallback;
