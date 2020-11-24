@@ -1,3 +1,4 @@
-import { startRetweet } from './controller/controller';
+import { startRetweet, startTweetRedditPosts } from './controller/controller';
 
 startRetweet();
+startTweetRedditPosts();

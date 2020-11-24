@@ -8,11 +8,11 @@ import Twitter from 'twitter';
 
 import Spy = jasmine.Spy;
 
-describe('Controller functions', () => {
+describe('Controller startRetweet function', () => {
     let mapperSpy: Spy;
     let searchSpy: Spy;
     let retweetSpy: Spy;
-    const mockTwitterBot: object = {};
+    const mockTwitterBot = {};
 
     const mockSearchParams: SearchParams = {
         q: 'someQueryString',

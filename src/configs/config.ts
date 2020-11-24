@@ -1,3 +1,5 @@
+import { TweetRedditPostConfig } from '../models/tweet-reddit-post-config.interface';
+
 if (process.env.ENVIRONMENT !== 'prod') {
     console.log('loaded dotenv');
     require('dotenv').config();
@@ -15,7 +17,11 @@ export default {
     } as AccessTokenOptions,
     retweetConfig: {
         hashtags: [ 'typescript', 'javascript', 'python', 'nodejs' ],
-        sortOrder: 'recent',
+        sortOrder: 'mixed',
         numTweets: 10
-    } as RetweetConfig
+    } as RetweetConfig,
+    tweetRedditPostConfig: {
+        subreddits: [ 'typescript', 'javascript', 'python', 'node' ],
+        numPosts: 5
+    } as TweetRedditPostConfig
 } as ConfigInterface;
