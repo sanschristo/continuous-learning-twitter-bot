@@ -18,7 +18,7 @@ export default {
     retweetConfig: {
         hashtags: [ 'typescript', 'javascript', 'python', 'nodejs' ],
         sortOrder: 'mixed',
-        numTweets: 10
+        numTweets: 15
     } as RetweetConfig,
     tweetRedditPostConfig: {
         subreddits: [ 'typescript', 'javascript', 'python', 'node' ],
