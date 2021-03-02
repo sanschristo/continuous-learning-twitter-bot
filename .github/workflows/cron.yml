@@ -2,7 +2,7 @@ name: Bi-hourly Cron
 
 on:
   schedule:
-    - cron: '00 */2 * * *'
+    - cron: '0 */2 * * *'
 
 jobs:
   build:
