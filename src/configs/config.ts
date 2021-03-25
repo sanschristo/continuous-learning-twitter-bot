@@ -21,7 +21,7 @@ export default {
         numTweets: 15
     } as RetweetConfig,
     tweetRedditPostConfig: {
-        subreddits: [ 'typescript', 'javascript', 'python', 'node' ],
-        numPosts: 5
+        subreddits: [ 'programming', 'learnprogramming', 'programminghumor', 'webdev' ],
+        numPosts: 10
     } as TweetRedditPostConfig
 } as ConfigInterface;
